@@ -1,19 +1,19 @@
 "use client";
 
 import { useState } from 'react';
-import Header from "@/Components/Header";
-import Footer from "@/Components/Footer";
+import Header from "@/Components/Header"
+import Footer from "@/Components/Footer"
 import Image from 'next/image';
 
 export default function Home() {
     const [isCvVisible, setIsCvVisible] = useState(false);
     
-    // Toggle the visibility of the CV
+    
     const toggleCv = () => {
         setIsCvVisible(!isCvVisible);
     };
 
-    // Function to generate and download the CV (Example: Download a PDF)
+    
     const handleDownloadCv = () => {
         const cvContent = `
             Name: Shan-e-Zehra\n
@@ -27,7 +27,7 @@ export default function Home() {
         const blob = new Blob([cvContent], { type: "text/plain" });
         const link = document.createElement('a');
         link.href = URL.createObjectURL(blob);
-        link.download = 'CV_Shan-e-Zehra.txt';  // You can change the file extension to .pdf if you want PDF generation.
+        link.download = 'CV_Shan-e-Zehra.txt';  
         link.click();
     };
 
@@ -36,27 +36,25 @@ export default function Home() {
             <Header />
             <div className="container mx-auto p-6">
                 <h1 className="text-3xl font-bold text-center mb-6">Welcome to My Portfolio</h1>
-                <div className="flex justify-center mb-6">
-                    <Image 
-                        src="/profile picture.jpg" // Ensure 'profile.jpg' is in the public folder
-                        alt="Profile Picture" 
-                        width={200} 
-                        height={200} 
-                        className="rounded-full transition-transform duration-300 transform hover:scale-105" 
-                    />
-                </div>
+                <Image 
+                    src="/profile.jpg" 
+                    alt="Profile Picture" 
+                    width={200} 
+                    height={200} 
+                    className="mx-auto rounded-full mb-6" 
+                />
                 <p className="text-center text-gray-700 mb-4">Click the button below to view my CV.</p>
 
-                {/* Toggle CV visibility */}
+                
                 <button 
                     onClick={toggleCv} 
-                    className="w-full md:w-1/2 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300 mb-4 mx-auto block">
+                    className="w-full py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300 mb-4">
                     {isCvVisible ? 'Hide CV' : 'Show CV'}
                 </button>
 
-                {/* CV Content */}
+                
                 {isCvVisible && (
-                    <div className="mt-6 p-4 bg-gray-100 rounded-lg shadow-md transition-all duration-500 ease-in-out">
+                    <div className="mt-6 p-4 bg-gray-100 rounded-lg shadow-md">
                         <h2 className="text-2xl font-semibold mb-2">Curriculum Vitae</h2>
                         <p className="text-gray-600"><strong>Name:</strong> Shan-e-Zehra</p>
                         <p className="text-gray-600"><strong>Phone:</strong> 03333232390</p>
@@ -67,10 +65,10 @@ export default function Home() {
                     </div>
                 )}
 
-                {/* Generate CV (Download) Button */}
+                
                 <button 
                     onClick={handleDownloadCv}
-                    className="w-full md:w-1/2 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition duration-300 mt-6 mx-auto block">
+                    className="w-full py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition duration-300 mt-6">
                     Generate CV (Download)
                 </button>
             </div>
