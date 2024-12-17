@@ -1,8 +1,8 @@
 const Footer = () => {
     return (
-        <footer className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-blue-300 py-6 mt-12 transition-all duration-500 ease-in-out transform hover:scale-105 hover:shadow-lg">
+        <footer className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-blue-500 py-6 mt-12 transition-all duration-500 ease-in-out transform hover:scale-105 hover:shadow-lg">
             <div className="container mx-auto px-4 text-center">
-                <p className="text-base md:text-lg font-semibold animate-fade-in text-gray-300 hover:text-white transition-colors duration-300">
+                <p className="text-base md:text-lg font-semibold animate-fade-in text-blue-300 hover:text-white transition-colors duration-300">
                     &copy; {new Date().getFullYear()} Shan-e-Zehra. All rights reserved.
                 </p>
                 <div className="flex justify-center mt-4 space-x-6">
