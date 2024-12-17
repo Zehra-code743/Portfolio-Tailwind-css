@@ -13,7 +13,7 @@ const Header = () => {
     };
 
     return (
-        <header className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 text-white shadow-lg">
+        <header className="bg-gradient-to-r from-purple-600 via-purple-500 to-purple-400 text-white shadow-lg">
             <div className="container mx-auto flex items-center justify-between p-4">
                 {/* Logo */}
                 <h1 className="text-2xl font-bold tracking-wide">My Portfolio</h1>
@@ -28,7 +28,7 @@ const Header = () => {
 
                 {/* Navigation for Desktop and Mobile */}
                 <nav
-                    className={`absolute md:static top-16 left-0 md:top-0 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 md:bg-transparent w-full md:w-auto transform transition-transform duration-300 ease-in-out ${
+                    className={`absolute md:static top-16 left-0 md:top-0 bg-gradient-to-r from-purple-600 via-purple-500 to-purple-400 md:bg-transparent w-full md:w-auto transform transition-transform duration-300 ease-in-out ${
                         isMenuOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"
                     } md:flex items-center`}
                 >
@@ -47,10 +47,10 @@ const Header = () => {
                                 About
                             </button>
                             {openDropdown === "about" && (
-                                <div className="absolute left-0 mt-2 w-40 bg-gray-800 text-white rounded-lg shadow-lg z-10">
+                                <div className="absolute left-0 mt-2 w-40 bg-purple-500 text-white rounded-lg shadow-lg z-10">
                                     <Link
                                         href="/about"
-                                        className="block px-4 py-2 hover:bg-gray-700"
+                                        className="block px-4 py-2 hover:bg-purple-600"
                                     >
                                         About Me
                                     </Link>
@@ -67,10 +67,10 @@ const Header = () => {
                                 Projects
                             </button>
                             {openDropdown === "projects" && (
-                                <div className="absolute left-0 mt-2 w-40 bg-gray-800 text-white rounded-lg shadow-lg z-10">
+                                <div className="absolute left-0 mt-2 w-40 bg-purple-500 text-white rounded-lg shadow-lg z-10">
                                     <Link
                                         href="/projects"
-                                        className="block px-4 py-2 hover:bg-gray-700"
+                                        className="block px-4 py-2 hover:bg-purple-600"
                                     >
                                         My Projects
                                     </Link>
@@ -87,10 +87,10 @@ const Header = () => {
                                 Contact
                             </button>
                             {openDropdown === "contact" && (
-                                <div className="absolute left-0 mt-2 w-40 bg-gray-800 text-white rounded-lg shadow-lg z-10">
+                                <div className="absolute left-0 mt-2 w-40 bg-purple-500 text-white rounded-lg shadow-lg z-10">
                                     <Link
                                         href="/contact"
-                                        className="block px-4 py-2 hover:bg-gray-700"
+                                        className="block px-4 py-2 hover:bg-purple-600"
                                     >
                                         Get in Touch
                                     </Link>
