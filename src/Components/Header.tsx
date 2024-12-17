@@ -13,7 +13,7 @@ const Header = () => {
     };
 
     return (
-        <header className="bg-gray-800 text-white">
+        <header className="bg-gradient-to-r from-purple-900 via-purple-800 to-purple-700 text-white">
             <div className="container mx-auto flex items-center justify-between p-4">
                 {/* Logo */}
                 <h1 className="text-2xl font-bold">My Portfolio</h1>
@@ -28,7 +28,7 @@ const Header = () => {
 
                 {/* Navigation for Desktop and Mobile */}
                 <nav
-                    className={`absolute md:static top-16 left-0 md:top-0 bg-gray-800 md:bg-transparent w-full md:w-auto transform transition-transform duration-300 ease-in-out ${
+                    className={`absolute md:static top-16 left-0 md:top-0 bg-gradient-to-r from-purple-900 via-purple-800 to-purple-700 md:bg-transparent w-full md:w-auto transform transition-transform duration-300 ease-in-out ${
                         isMenuOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"
                     } md:flex items-center`}
                 >

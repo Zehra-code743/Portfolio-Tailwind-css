@@ -16,7 +16,7 @@ export default function About() {
                 <div className="flex justify-center my-6">
                     <div className="relative w-40 h-40 sm:w-48 sm:h-48 rounded-full overflow-hidden shadow-lg">
                         <Image
-                            src="/web developer.jpg"
+                            src="/webdeveloper.png"
                             alt="Profile Picture"
                             layout="fill"
                             objectFit="cover"
@@ -38,7 +38,7 @@ export default function About() {
                 <div className="flex justify-center my-6">
                     <div className="relative w-40 h-40 sm:w-48 sm:h-48 rounded-full overflow-hidden shadow-lg">
                         <Image
-                            src="/web developer 4.jpg"
+                            src="/webdeveloper4.png"
                             alt="Profile Picture"
                             layout="fill"
                             objectFit="cover"

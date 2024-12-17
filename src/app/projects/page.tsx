@@ -22,7 +22,7 @@ export default function Projects() {
                     </h2>
                     <div className="flex flex-col md:flex-row items-center mt-4 transition-transform transform hover:scale-105 hover:shadow-xl animate-slide-in-up">
                         <Image
-                            src="/web developer 1.jpg"
+                            src="/webdeveloper1.png"
                             alt="Project 1 Thumbnail"
                             width={200}
                             height={200}
@@ -41,7 +41,7 @@ export default function Projects() {
                     </h2>
                     <div className="flex flex-col md:flex-row items-center mt-4 transition-transform transform hover:scale-105 hover:shadow-xl animate-slide-in-up">
                         <Image
-                            src="/web project.jpg"
+                            src="/webproject.png"
                             alt="Project 2 Thumbnail"
                             width={200}
                             height={200}
@@ -60,7 +60,7 @@ export default function Projects() {
                     </h2>
                     <div className="flex flex-col md:flex-row items-center mt-4 transition-transform transform hover:scale-105 hover:shadow-xl animate-slide-in-up">
                         <Image
-                            src="/web developer 3.jpg"
+                            src="/webdeveloper3.png"
                             alt="Project 3 Thumbnail"
                             width={200}
                             height={200}
