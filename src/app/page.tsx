@@ -41,7 +41,7 @@ export default function Home() {
                 {/* Profile Picture */}
                 <div className="flex justify-center">
                     <Image
-                        src="/profile picture.jpg"
+                        src="/profilepicture.png"
                         alt="Profile Picture"
                         width={200}
                         height={200}
@@ -61,7 +61,7 @@ export default function Home() {
                 <div className="mt-8">
                     <button
                         onClick={toggleCv}
-                        className="w-full sm:w-auto px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-transform transform hover:scale-105 duration-300 mx-auto block"
+                        className="w-full sm:w-auto px-6 py-2 bg-blue-500 text-black rounded-lg hover:bg-blue-600 transition-transform transform hover:scale-105 duration-300 mx-auto block"
                     >
                         {isCvVisible ? "Hide CV" : "Show CV"}
                     </button>

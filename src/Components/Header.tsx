@@ -47,7 +47,7 @@ const Header = () => {
                                 About
                             </button>
                             {openDropdown === "about" && (
-                                <div className="absolute left-0 mt-2 w-40 bg-white text-gray-800 rounded-lg shadow-lg z-10">
+                                <div className="absolute left-0 mt-2 w-40 bg-blue-200 text-gray-800 rounded-lg shadow-lg z-10">
                                     <Link
                                         href="/about"
                                         className="block px-4 py-2 hover:bg-gray-200"
@@ -67,7 +67,7 @@ const Header = () => {
                                 Projects
                             </button>
                             {openDropdown === "projects" && (
-                                <div className="absolute left-0 mt-2 w-40 bg-white text-gray-800 rounded-lg shadow-lg z-10">
+                                <div className="absolute left-0 mt-2 w-40 bg-blue-200 text-gray-800 rounded-lg shadow-lg z-10">
                                     <Link
                                         href="/projects"
                                         className="block px-4 py-2 hover:bg-gray-200"

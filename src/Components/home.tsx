@@ -39,7 +39,7 @@ export default function Home() {
                 </h1>
                 <div className="flex justify-center mb-6">
                     <Image
-                        src="/profile picture.jpg"
+                        src="/profilepicture.png"
                         alt="Profile Picture"
                         width={200}
                         height={200}
