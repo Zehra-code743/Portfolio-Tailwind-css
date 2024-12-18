@@ -28,13 +28,15 @@ const Header = () => {
 
                 {/* Navigation for Desktop and Mobile */}
                 <nav
-                    className={`absolute md:static top-16 left-0 md:top-0 bg-gradient-to-r from-purple-600 via-blue-500 to-blue-400 md:bg-transparent w-full md:w-auto transform transition-transform duration-300 ease-in-out ${
+                    className={`absolute md:static top-16 left-0 md:top-0 bg-gradient-to-r from-pink-300 via-red-300 to-red-400 md:bg-transparent w-full md:w-auto transform transition-transform duration-300 ease-in-out ${
                         isMenuOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"
                     } md:flex items-center`}
                 >
                     <div className="md:flex md:space-x-6 md:items-center">
                         {/* Home Link */}
-                        <Link href="/" className="block px-4 py-2 md:py-0 hover:underline">
+                        
+                        {/* Home Link */}
+                        <Link href="/" className="block px-4 py-2 md:py-0 hover:underline hover:text-yellow-400">
                             Home
                         </Link>
 
@@ -47,7 +49,7 @@ const Header = () => {
                                 About
                             </button>
                             {openDropdown === "about" && (
-                                <div className="absolute left-0 mt-2 w-40 bg-blue-500 text-black rounded-lg shadow-lg z-10">
+                                <div className="absolute left-0 mt-2 w-40 bg-yellow-200 text-black rounded-lg shadow-lg z-10">
                                     <Link
                                         href="/about"
                                         className="block px-4 py-2 hover:bg-purple-600"
@@ -67,7 +69,7 @@ const Header = () => {
                                 Projects
                             </button>
                             {openDropdown === "projects" && (
-                                <div className="absolute left-0 mt-2 w-40 bg-blue-500 text-black rounded-lg shadow-lg z-10">
+                                <div className="absolute left-0 mt-2 w-40 bg-yellow-200 text-black rounded-lg shadow-lg z-10">
                                     <Link
                                         href="/projects"
                                         className="block px-4 py-2 hover:bg-purple-600"
@@ -87,7 +89,7 @@ const Header = () => {
                                 Contact
                             </button>
                             {openDropdown === "contact" && (
-                                <div className="absolute left-0 mt-2 w-40 bg-blue-500 text-black rounded-lg shadow-lg z-10">
+                                <div className="absolute left-0 mt-2 w-40 bg-yellow-200 text-black rounded-lg shadow-lg z-10">
                                     <Link
                                         href="/contact"
                                         className="block px-4 py-2 hover:bg-purple-600"
